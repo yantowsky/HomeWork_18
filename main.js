@@ -28,7 +28,9 @@ if (operation != null) {
   switch (operation) {
     case "add":
       result = num1 + num2;
-      document.write(`${num1} + ${num2} = ${result}`);
+      String(num2)[0] != "-" ?
+        document.write(`${num1} + ${num2} = ${result}`) :
+        document.write(`${num1} + (${num2}) = ${result}`);
       break;
     case "sub":
       result = num1 - num2;
